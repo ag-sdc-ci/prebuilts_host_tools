@@ -1,0 +1,180 @@
+package {
+    default_applicable_licenses: ["prebuilts_host_tools_license"],
+}
+
+license {
+    name: "prebuilts_host_tools_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+        "SPDX-license-identifier-BSD-3-Clause",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+// Android Debug Bridge & Fastboot
+cc_prebuilt_binary {
+    name: "adb",
+    srcs: ["bin/adb"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "fastboot",
+    srcs: ["bin/fastboot"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+// Dynamic Partitions
+cc_prebuilt_binary {
+    name: "lpmake",
+    srcs: ["bin/lpmake"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "lpunpack",
+    srcs: ["bin/lpunpack"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "lpadd",
+    srcs: ["bin/lpadd"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "lpflash",
+    srcs: ["bin/lpflash"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "lpdump",
+    srcs: ["bin/lpdump"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+// Sparse Image Tools
+cc_prebuilt_binary {
+    name: "simg2img",
+    srcs: ["bin/simg2img"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "img2simg",
+    srcs: ["bin/img2simg"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "append2simg",
+    srcs: ["bin/append2simg"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "ext2simg",
+    srcs: ["bin/ext2simg"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+// Filesystem Tools
+cc_prebuilt_binary {
+    name: "e2fsdroid",
+    srcs: ["bin/e2fsdroid"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "mke2fs.android",
+    srcs: ["bin/mke2fs.android"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "make_f2fs",
+    srcs: ["bin/make_f2fs"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "sload_f2fs",
+    srcs: ["bin/sload_f2fs"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+// Boot & Verification Scripts
+sh_binary_host {
+    name: "mkbootimg",
+    src: "bin/mkbootimg",
+}
+
+sh_binary_host {
+    name: "unpack_bootimg",
+    src: "bin/unpack_bootimg",
+}
+
+sh_binary_host {
+    name: "repack_bootimg",
+    src: "bin/repack_bootimg",
+}
+
+sh_binary_host {
+    name: "mkdtboimg",
+    src: "bin/mkdtboimg",
+}
+
+sh_binary_host {
+    name: "avbtool",
+    src: "bin/avbtool",
+}

@@ -1,0 +1,6 @@
+shadow prebuilt repo: tools (host)
+  package: android-tools 37.0.0-5.1 (Arch Linux / CachyOS)
+  upstream: platform/system/core + platform/system/extras + platform/system/tools/mkbootimg + platform/external/avb
+  api-level: universal (Android 17 / API 37 baseline)
+  deliverables: bin/{adb,fastboot,lpmake,lpunpack,lpadd,lpflash,lpdump,simg2img,img2simg,append2simg,ext2simg,e2fsdroid,mke2fs.android,make_f2fs,sload_f2fs,mkbootimg,unpack_bootimg,repack_bootimg,mkdtboimg,avbtool}
+  date: 2026-10-25
