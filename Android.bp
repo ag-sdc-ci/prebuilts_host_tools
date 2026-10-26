@@ -107,24 +107,7 @@ cc_prebuilt_binary {
     device_supported: false,
 }
 
-cc_prebuilt_binary {
-    name: "ext2simg",
-    srcs: ["bin/ext2simg"],
-    check_elf_files: false,
-    prefer: true,
-    host_supported: true,
-    device_supported: false,
-}
-
-// Filesystem Tools
-cc_prebuilt_binary {
-    name: "e2fsdroid",
-    srcs: ["bin/e2fsdroid"],
-    check_elf_files: false,
-    prefer: true,
-    host_supported: true,
-    device_supported: false,
-}
+// Filesystem Tools provided by prebuilts_e2fsprogs: ext2simg, e2fsdroid
 
 cc_prebuilt_binary {
     name: "mke2fs.android",
