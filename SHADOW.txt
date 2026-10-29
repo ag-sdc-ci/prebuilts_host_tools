@@ -1,6 +1,6 @@
 shadow prebuilt repo: tools (host)
-  package: android-tools 37.0.0-5.1 (Arch Linux / CachyOS) + build/make/tools + tools/platform-compat
-  upstream: platform/system/core + platform/system/extras + platform/system/tools/mkbootimg + platform/external/avb + platform/build + platform/tools/platform-compat
+  package: android-tools 37.0.0-5.1 (Arch Linux / CachyOS) + build/make/tools + tools/platform-compat + build/soong
+  upstream: platform/system/core + platform/system/extras + platform/system/tools/mkbootimg + platform/external/avb + platform/build + platform/tools/platform-compat + platform/build/soong + platform/build/blueprint
   api-level: universal (Android 17 / API 37 baseline)
-  deliverables: bin/{adb,fastboot,lpmake,lpunpack,lpadd,lpflash,lpdump,simg2img,img2simg,append2simg,ext2simg,e2fsdroid,mke2fs.android,make_f2fs,sload_f2fs,mkbootimg,unpack_bootimg,repack_bootimg,mkdtboimg,avbtool,fs_config,fs_config_generator,process-compat-config,class2nonsdklist,rbcrun,acp,ziptime}, lib64/class2nonsdklist.jar
+  deliverables: bin/{adb,fastboot,lpmake,lpunpack,lpadd,lpflash,lpdump,simg2img,img2simg,append2simg,ext2simg,e2fsdroid,mke2fs.android,make_f2fs,sload_f2fs,mkbootimg,unpack_bootimg,repack_bootimg,mkdtboimg,avbtool,fs_config,fs_config_generator,process-compat-config,class2nonsdklist,rbcrun,acp,ziptime,soong_ui,soong_build,bpfmt,microfactory}, lib64/class2nonsdklist.jar
   date: 2026-10-29

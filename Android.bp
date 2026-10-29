@@ -215,3 +215,40 @@ cc_prebuilt_binary {
     host_supported: true,
     device_supported: false,
 }
+
+// Soong Build System Engines
+cc_prebuilt_binary {
+    name: "soong_ui",
+    srcs: ["bin/soong_ui"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "soong_build",
+    srcs: ["bin/soong_build"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "bpfmt",
+    srcs: ["bin/bpfmt"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "microfactory",
+    srcs: ["bin/microfactory"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
