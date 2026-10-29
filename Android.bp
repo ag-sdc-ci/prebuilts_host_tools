@@ -161,3 +161,57 @@ sh_binary_host {
     name: "avbtool",
     src: "bin/avbtool",
 }
+
+// File System Configuration Tools
+cc_prebuilt_binary {
+    name: "fs_config",
+    srcs: ["bin/fs_config"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+sh_binary_host {
+    name: "fs_config_generator",
+    src: "bin/fs_config_generator",
+}
+
+// Platform Compat Configuration Tools
+sh_binary_host {
+    name: "process-compat-config",
+    src: "bin/process-compat-config",
+}
+
+sh_binary_host {
+    name: "class2nonsdklist",
+    src: "bin/class2nonsdklist",
+}
+
+// Build & Starlark Tools
+cc_prebuilt_binary {
+    name: "rbcrun",
+    srcs: ["bin/rbcrun"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "acp",
+    srcs: ["bin/acp"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
+
+cc_prebuilt_binary {
+    name: "ziptime",
+    srcs: ["bin/ziptime"],
+    check_elf_files: false,
+    prefer: true,
+    host_supported: true,
+    device_supported: false,
+}
